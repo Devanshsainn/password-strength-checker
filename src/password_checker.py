@@ -13,6 +13,19 @@ def check_lowercase(password):
     return any(char.islower() for char in password)
 
 
+def check_digits(password):
+    """Check if the password contains at least one digit."""
+    return any(char.isdigit() for char in password)
+
+
+import string
+
+
+def check_special_characters(password):
+    """Check if the password contains at least one special character."""
+    return any(char in string.punctuation for char in password)
+
+
 def main():
     password = input("Enter a password: ")
 
@@ -33,6 +46,16 @@ def main():
         print("✅ Lowercase Letter: Present")
     else:
         print("❌ Lowercase Letter: Missing")
+
+    if check_digits(password):
+        print("✅ Number: Present")
+    else:
+        print("❌ Number: Missing")
+
+    if check_special_characters(password):
+        print("✅ Special Character: Present")
+    else:
+        print("❌ Special Character: Missing")
 
 
 if __name__ == "__main__":
