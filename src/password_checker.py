@@ -8,6 +8,11 @@ def check_uppercase(password):
     return any(char.isupper() for char in password)
 
 
+def check_lowercase(password):
+    """Check if the password contains at least one lowercase letter."""
+    return any(char.islower() for char in password)
+
+
 def main():
     password = input("Enter a password: ")
 
@@ -23,6 +28,11 @@ def main():
         print("✅ Uppercase Letter: Present")
     else:
         print("❌ Uppercase Letter: Missing")
+
+    if check_lowercase(password):
+        print("✅ Lowercase Letter: Present")
+    else:
+        print("❌ Lowercase Letter: Missing")
 
 
 if __name__ == "__main__":
