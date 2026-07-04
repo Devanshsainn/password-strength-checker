@@ -25,6 +25,28 @@ def check_special_characters(password):
     """Check if the password contains at least one special character."""
     return any(char in string.punctuation for char in password)
 
+def calculate_score(password):
+    """Calculate the password strength score."""
+
+    score = 0
+
+    if check_length(password):
+        score += 1
+
+    if check_uppercase(password):
+        score += 1
+
+    if check_lowercase(password):
+        score += 1
+
+    if check_digits(password):
+        score += 1
+
+    if check_special_characters(password):
+        score += 1
+
+    return score
+
 
 def main():
     password = input("Enter a password: ")
@@ -56,6 +78,10 @@ def main():
         print("✅ Special Character: Present")
     else:
         print("❌ Special Character: Missing")
+
+    score = calculate_score(password)
+
+    print("\nPassword Score:", score, "/5")
 
 
 if __name__ == "__main__":
