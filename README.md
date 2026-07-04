@@ -70,6 +70,10 @@ pytest
 - Git Version Control
 - Professional Repository Structure
 
+## 📸 Demo
+
+![Password Strength Checker Demo](screenshots/demo.png)
+
 ## 📄 License
 
 MIT License
