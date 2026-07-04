@@ -72,7 +72,7 @@ pytest
 
 ## 📸 Demo
 
-![Password Strength Checker Demo](screenshots/demo.png)
+![Password Strength Checker Demo](screenshots/demo.png.png)
 
 ## 📄 License
 
