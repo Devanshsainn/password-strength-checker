@@ -48,7 +48,7 @@ python src/password_checker.py
 
 ## 📸 Example Output
 
-(Add screenshot here later)
+![Password Strength Checker Demo](screenshots/demo.png.png)
 
 ## 🧪 Run Tests
 
@@ -70,9 +70,6 @@ pytest
 - Git Version Control
 - Professional Repository Structure
 
-## 📸 Demo
-
-![Password Strength Checker Demo](screenshots/demo.png.png)
 
 ## 📄 License
 
